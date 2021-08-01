@@ -357,7 +357,7 @@ function init_gear_sets()
         back=gear.tp_jse_back,waist="Olseni Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.engaged.DW = {
-		head="Meghanada Visor +1",neck="Marked Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
+		head="Meghanada Visor +1",neck="Marked Gorget",ear1="Suppanomimi",ear2="Brutal Earring",
 		body="Meg. Cuirie +1",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="Petrov Ring",
 		back=gear.tp_jse_back,waist="Kentarch Belt +1",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
     
