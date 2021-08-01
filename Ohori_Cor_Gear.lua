@@ -62,7 +62,7 @@ function init_gear_sets()
 
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac"}
     sets.precast.JA['Snake Eye'] = {legs="Lanun Trews"}
-    sets.precast.JA['Wild Card'] = {feet="Lanun Bottes"}
+    sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +2"}
     sets.precast.JA['Random Deal'] = {body="Lanun Frac"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants"}
 
@@ -135,7 +135,7 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-        head="Meghanada Visor +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Telos Earring",
+        head="Meghanada Visor +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
         body="Meg. Cuirie +1",hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Ifrit Ring +1",
         back=gear.str_wsd_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 		
@@ -193,10 +193,10 @@ function init_gear_sets()
         body="Laksa. Frac +2",
         hands="Carmine Fin. Ga. +1",
         ring1="Archon Ring",
-        ring2="Dingir Ring",
+        -- ring2="Dingir Ring",
         back=gear.magic_wsd_jse_back,
         waist="Svelt. Gouriz +1",
-        legs="Laksa. Trews +1",
+        legs="Shned. Tights +1",
         feet="Lanun Bottes +2"
     }
 
@@ -272,10 +272,21 @@ function init_gear_sets()
     
 
     -- Idle sets
-    sets.idle = {ammo=gear.RAbullet,
-        head="Meghanada Visor +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body="Meg. Cuirie +1",hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonlight Cape",waist="Flume Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
+    sets.idle = {
+        ammo=gear.RAbullet,
+        head="Meghanada Visor +1",
+        neck="Loricate Torque +1",
+        ear1="Etiolation Earring",
+        ear2="Sanare Earring",
+        body="Meg. Cuirie +1",
+        hands="Meg. Gloves +2",
+        ring1="Defending Ring",
+        ring2="Dark Ring",
+        back="Moonlight Cape",
+        waist="Flume Belt",
+        legs="Meg. Chausses +1",
+        feet="Meg. Jam. +2"
+    }
 		
     sets.idle.PDT = {ammo=gear.RAbullet,
         head="Meghanada Visor +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
