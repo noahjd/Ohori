@@ -10,14 +10,14 @@ function user_job_setup()
 	state.Weapons:options('Default','DualWeapons','DualSavageWeapons','DualLeadenRanged','DualLeadenMelee','DualAeolian','DualLeadenMeleeAcc','DualRanged','None')
 	state.CompensatorMode:options('Always','300','1000','Never')
 
-    gear.RAbullet = "Bronze Bullet"
+    gear.RAbullet = "Decimating Bullet"
     gear.WSbullet = "Decimating Bullet"
-    gear.MAbullet = "Bronze Bullet" --"Orichalc. Bullet" --For MAB WS, do not put single-use bullets here.
+    gear.MAbullet = "Orichalc. Bullet" --"Orichalc. Bullet" --For MAB WS, do not put single-use bullets here.
     gear.QDbullet = "Animikii Bullet"
     options.ammo_warning_limit = 10
 
-    autows = 'Savage Blade'
-    autowstp = 1000
+    autows = 'Leaden Salute'
+    autowstp = 1750
     autofood = 'Grape Daifuku'
 
 	gear.tp_ranger_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}}
@@ -66,10 +66,22 @@ function init_gear_sets()
     sets.precast.JA['Random Deal'] = {body="Lanun Frac"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants"}
 
-    sets.precast.CorsairRoll = {main="Rostam",range="Compensator",
-        head="Lanun Tricorne",neck="Regal Necklace",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body="Lanun Frac +1",hands="Chasseur's Gants",ring1="Barataria Ring",ring2="Dark Ring",
-        back=gear.tp_jse_back,waist="Flume Belt",legs="Desultor Tassets",feet="Malignance Boots"}
+    sets.precast.CorsairRoll = {
+        -- main="Rostam",
+        -- range="Compensator",
+        head="Lanun Tricorne",
+        neck="Regal Necklace",
+        ear1="Etiolation Earring",
+        ear2="Sanare Earring",
+        body="Lanun Frac +1",
+        hands="Chasseur's Gants",
+        ring1="Barataria Ring",
+        ring2="Dark Ring",
+        back=gear.tp_jse_back,
+        waist="Flume Belt",
+        legs="Desultor Tassets",
+        feet="Malignance Boots"
+    }
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
@@ -194,7 +206,7 @@ function init_gear_sets()
         hands="Carmine Fin. Ga. +1",
         ring1="Archon Ring",
         -- ring2="Dingir Ring",
-        back=gear.magic_wsd_jse_back,
+        -- back=gear.magic_wsd_jse_back,
         waist="Svelt. Gouriz +1",
         legs="Shned. Tights +1",
         feet="Lanun Bottes +2"
@@ -322,7 +334,7 @@ function init_gear_sets()
 	sets.weapons.Default = {main="Naegling",sub="Nusku Shield",range="Fomalhaut"}
 	sets.weapons.DualWeapons = {main="Kaja Sword",sub="Blurred Knife +1",range="Anarchy +2"} --main="Kaja Sword",sub="Kaja Knife",range="Fomalhaut"
 	sets.weapons.DualSavageWeapons = {main="Kaja Sword",sub="Blurred Knife +1",range="Anarchy +2"}
-	sets.weapons.DualLeadenRanged = {main="Rostam",sub="Tauret",range="Fomalhaut"}
+	sets.weapons.DualLeadenRanged = {main="Kaja Sword",sub="Kaja Knife",range="Anarchy +2"}
 	sets.weapons.DualLeadenMelee = {main="Naegling",sub="Atoyac",range="Fomalhaut"}
 	sets.weapons.DualAeolian = {main="Rostam",sub="Tauret",range="Ataktos"}
 	sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub="Blurred Knife +1",range="Fomalhaut"}
