@@ -206,7 +206,7 @@ function init_gear_sets()
         hands="Carmine Fin. Ga. +1",
         ring1="Archon Ring",
         -- ring2="Dingir Ring",
-        -- back=gear.magic_wsd_jse_back,
+        back=gear.magic_wsd_jse_back,
         waist="Svelt. Gouriz +1",
         legs="Shned. Tights +1",
         feet="Lanun Bottes +2"
