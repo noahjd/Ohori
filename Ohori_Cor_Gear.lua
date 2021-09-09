@@ -86,32 +86,32 @@ function init_gear_sets()
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes"})
-    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes"})
+    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Chasseur's Bottes +1"})
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants"})
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
-        head=gear.herculean_nuke_head,neck="Iskur Gorget",ear1="Dedition Earring",ear2="Telos Earring",
-        body="Mummu Jacket +2",hands="Adhemar Wristbands +1",ring1="Ilabrat Ring",ring2="Petrov Ring",
-        back=gear.tp_ranger_jse_back,waist="Goading Belt",legs="Chas. Culottes",feet="Carmine Greaves +1"}
+        head="Nyame Helm",neck="Iskur Gorget",ear1="Dedition Earring",ear2="Telos Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Ilabrat Ring",ring2="Petrov Ring",
+        back=gear.tp_ranger_jse_back,waist="Goading Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 	sets.precast.CorsairShot.Damage = {ammo=gear.QDbullet,
-        head=gear.herculean_nuke_head,neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Crematio Earring",
-        body="Samnuha Coat",hands="Leyline Gloves",ring1="Shiva Ring +1",ring2="Dingir Ring",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Malignance Tights",feet="Chasseur's Bottes"}
+        head="Nyame Helm",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Crematio Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shiva Ring +1",ring2="Dingir Ring",
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Chasseur's Bottes +1"}
 	
     sets.precast.CorsairShot.Proc = {ammo=gear.RAbullet,
         head="Wh. Rarab Cap +1",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
         body="Emet Harness +1",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonlight Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Chasseur's Bottes"}
+        back="Moonlight Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Chasseur's Bottes +1"}
 
     sets.precast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
-        head="Carmine Mask +1",neck="Sanctity Necklace",ear1="Digni. Earring",ear2="Telos Earring",
-        body="Mummu Jacket +2",hands="Leyline Gloves",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Malignance Tights",feet="Mummu Gamash. +2"}
+        head="Nyame Helm",neck="Sanctity Necklace",ear1="Digni. Earring",ear2="Telos Earring",
+        body="Mummu Jacket +2",hands="Nyame Gauntlets",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
-    sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'], {feet="Chasseur's Bottes"})
+    sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'], {feet="Chasseur's Bottes +1"})
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
@@ -213,19 +213,19 @@ function init_gear_sets()
     }
 
     sets.precast.WS['Aeolian Edge'] = {ammo="Animikii Bullet",
-        head=gear.herculean_nuke_head,neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
-        body="Laksa. Frac +2",hands="Leyline Gloves",ring1="Metamor. Ring +1",ring2="Dingir Ring",
-        back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Laksa. Trews +3",feet="Lanun Bottes +2"}
+        head="Nyame Helm",neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Metamor. Ring +1",ring2="Dingir Ring",
+        back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +2"}
 
     sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet,
-        head=gear.herculean_nuke_head,neck="Baetyl Pendant",ear1="Crematio Earring",ear2="Friomisi Earring",
-        body="Laksa. Frac +2",hands="Carmine Fin. Ga. +1",ring1="Regal Ring",ring2="Dingir Ring",
-        back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Laksa. Trews +3",feet="Lanun Bottes +2"}
+        head="Nyame Helm",neck="Baetyl Pendant",ear1="Crematio Earring",ear2="Friomisi Earring",
+        body="Nyame Mail",hands="Carmine Fin. Ga. +1",ring1="Regal Ring",ring2="Dingir Ring",
+        back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +2"}
 
     sets.precast.WS['Wildfire'].Acc = {ammo=gear.MAbullet,
-        head=gear.herculean_nuke_head,neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
-        body="Laksa. Frac +2",hands="Leyline Gloves",ring1="Regal Ring",ring2="Dingir Ring",
-        back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Laksa. Trews +3",feet="Lanun Bottes +2"}
+        head="Nyame Helm",neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Regal Ring",ring2="Dingir Ring",
+        back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +2"}
 		
     sets.precast.WS['Hot Shot'] = sets.precast.WS['Wildfire']
     sets.precast.WS['Hot Shot'].Acc = sets.precast.WS['Wildfire'].Acc
@@ -262,13 +262,13 @@ function init_gear_sets()
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Enervating Earring",ear2="Telos Earring",
-        body="Nisroch Jerkin",hands="Carmine Fin. Ga. +1",ring1="Rajas Ring",ring2="Ilabrat Ring",
-        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Adhemar Kecks",feet="Meg. Jam. +2"}
+        body="Nisroch Jerkin",hands="Nyame Gauntlets",ring1="Rajas Ring",ring2="Ilabrat Ring",
+        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Nyame Flanchard",feet="Meg. Jam. +2"}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Enervating Earring",ear2="Telos Earring",
         body="Laksa. Frac +2",hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Dingir Ring",
-        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Laksa. Trews +3",feet="Meg. Jam. +2"}
+        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Nyame Flanchard",feet="Meg. Jam. +2"}
 		
 	sets.buff['Triple Shot'] = {body="Chasseur's Frac +1"}
     
@@ -286,24 +286,24 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {
         ammo=gear.RAbullet,
-        head="Meghanada Visor +1",
+        head="Nyame Helm",
         neck="Loricate Torque +1",
         ear1="Etiolation Earring",
         ear2="Sanare Earring",
-        body="Meg. Cuirie +1",
-        hands="Meg. Gloves +2",
+        body="Nyame Mail",
+        hands="Nyame Gauntlets",
         ring1="Defending Ring",
         ring2="Dark Ring",
         back="Moonlight Cape",
         waist="Flume Belt",
-        legs="Meg. Chausses +1",
-        feet="Meg. Jam. +2"
+        legs="Nyame Flanchard",
+        feet="Nyame Sollerets"
     }
 		
     sets.idle.PDT = {ammo=gear.RAbullet,
-        head="Meghanada Visor +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body="Meg. Cuirie +1",hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonlight Cape",waist="Flume Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Dark Ring",
+        back="Moonlight Cape",waist="Flume Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
     sets.idle.Refresh = {ammo=gear.RAbullet,
         head="Rawhide Mask",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
@@ -312,19 +312,19 @@ function init_gear_sets()
     
     -- Defense sets
     sets.defense.PDT = {ammo=gear.RAbullet,
-        head="Meghanada Visor +1",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
-        body="Meg. Cuirie +1",hands="Meg. Gloves +2",ring1="Defending Ring",ring2="Dark Ring",
-        back="Shadow Mantle",waist="Flume Belt",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Dark Ring",
+        back="Moonlight Cape",waist="Flume Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.defense.MDT = {ammo=gear.RAbullet,
-        head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Shadow Ring",
-        back="Moonlight Cape",waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Dark Ring",
+        back="Moonlight Cape",waist="Flume Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
     sets.defense.MEVA = {ammo=gear.RAbullet,
-        head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Shadow Ring",
-        back="Moonlight Cape",waist="Flume Belt",legs="Malignance Tights",feet="Malignance Boots"}
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Dark Ring",
+        back="Moonlight Cape",waist="Flume Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.Kiting = {legs="Carmine Cuisses +1"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
@@ -359,9 +359,9 @@ function init_gear_sets()
 		back=gear.tp_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 		
     sets.engaged.DT = {
-        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Petrov Ring",
-        back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Petrov Ring",
+        back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
     
     sets.engaged.Acc.DT = {
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Telos Earring",
@@ -379,9 +379,9 @@ function init_gear_sets()
 		back=gear.tp_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 		
     sets.engaged.DW.DT = {
-        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Brutal Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Petrov Ring",
-        back=gear.tp_jse_back,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Brutal Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Petrov Ring",
+        back=gear.tp_jse_back,waist="Reiki Yotai",legs="Nyame Flanchard",feet="Nyame Sollerets"}
     
     sets.engaged.DW.Acc.DT = {
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Telos Earring",
