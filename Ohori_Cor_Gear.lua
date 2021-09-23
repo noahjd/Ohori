@@ -17,7 +17,7 @@ function user_job_setup()
     options.ammo_warning_limit = 10
 
     autows = 'Leaden Salute'
-    autowstp = 1750
+    autowstp = 3000
     autofood = 'Grape Daifuku'
 
 	gear.tp_ranger_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}}
@@ -93,8 +93,8 @@ function init_gear_sets()
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
         head="Nyame Helm",neck="Iskur Gorget",ear1="Dedition Earring",ear2="Telos Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Ilabrat Ring",ring2="Petrov Ring",
-        back=gear.tp_ranger_jse_back,waist="Goading Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        body="Laksa. Tricorne +2",hands="Laksa. Gants +2",ring1="Ilabrat Ring",ring2="Petrov Ring",
+        back=gear.tp_ranger_jse_back,waist="Goading Belt",legs="Nyame Flanchard",feet="Laksa. Bottes +2"}
 		
 	sets.precast.CorsairShot.Damage = {ammo=gear.QDbullet,
         head="Nyame Helm",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Crematio Earring",
@@ -205,7 +205,7 @@ function init_gear_sets()
         body="Laksa. Frac +2",
         hands="Carmine Fin. Ga. +1",
         ring1="Archon Ring",
-        -- ring2="Dingir Ring",
+        ring2="Dingir Ring",
         back=gear.magic_wsd_jse_back,
         waist="Svelt. Gouriz +1",
         legs="Shned. Tights +1",
@@ -334,10 +334,10 @@ function init_gear_sets()
 	sets.weapons.Default = {main="Naegling",sub="Nusku Shield",range="Fomalhaut"}
 	sets.weapons.DualWeapons = {main="Kaja Sword",sub="Blurred Knife +1",range="Anarchy +2"} --main="Kaja Sword",sub="Kaja Knife",range="Fomalhaut"
 	sets.weapons.DualSavageWeapons = {main="Kaja Sword",sub="Blurred Knife +1",range="Anarchy +2"}
-	sets.weapons.DualLeadenRanged = {main="Kaja Sword",sub="Kaja Knife",range="Anarchy +2"}
-	sets.weapons.DualLeadenMelee = {main="Naegling",sub="Atoyac",range="Fomalhaut"}
+	sets.weapons.DualLeadenRanged = {main="Kaja Sword",sub="Kaja Knife",range="Holliday"}
+	sets.weapons.DualLeadenMelee = {main="Naegling",sub="Atoyac",range="Holliday"}
 	sets.weapons.DualAeolian = {main="Rostam",sub="Tauret",range="Ataktos"}
-	sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub="Blurred Knife +1",range="Fomalhaut"}
+	sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub="Blurred Knife +1",range="Holliday"}
 	sets.weapons.DualRanged = {main="Rostam",sub="Kustawi +1",range="Fomalhaut"}
 	
     -- Engaged sets
