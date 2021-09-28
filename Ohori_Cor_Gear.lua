@@ -63,7 +63,7 @@ function init_gear_sets()
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac"}
     sets.precast.JA['Snake Eye'] = {legs="Lanun Trews"}
     sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +3"}
-    sets.precast.JA['Random Deal'] = {body="Lanun Frac"}
+    sets.precast.JA['Random Deal'] = {body="Lanun Frac +3"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants"}
 
     sets.precast.CorsairRoll = {
@@ -73,7 +73,7 @@ function init_gear_sets()
         neck="Regal Necklace",
         ear1="Etiolation Earring",
         ear2="Sanare Earring",
-        body="Lanun Frac +1",
+        body="Lanun Frac +3",
         hands="Chasseur's Gants",
         ring1="Barataria Ring",
         ring2="Dark Ring",
@@ -93,7 +93,7 @@ function init_gear_sets()
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
         head="Nyame Helm",neck="Iskur Gorget",ear1="Dedition Earring",ear2="Telos Earring",
-        body="Laksa. Tricorne +2",hands="Laksa. Gants +2",ring1="Ilabrat Ring",ring2="Petrov Ring",
+        body="Lanun Frac +3",hands="Laksa. Gants +2",ring1="Ilabrat Ring",ring2="Petrov Ring",
         back=gear.tp_ranger_jse_back,waist="Goading Belt",legs="Nyame Flanchard",feet="Laksa. Bottes +2"}
 		
 	sets.precast.CorsairShot.Damage = {ammo=gear.QDbullet,
@@ -202,7 +202,7 @@ function init_gear_sets()
         neck="Stoicheion Medal",
         ear1="Moonshade Earring",
         ear2="Friomisi Earring",
-        body="Laksa. Frac +2",
+        body="Lanun Frac +3",
         hands="Carmine Fin. Ga. +1",
         ring1="Archon Ring",
         ring2="Dingir Ring",
@@ -214,12 +214,12 @@ function init_gear_sets()
 
     sets.precast.WS['Aeolian Edge'] = {ammo="Animikii Bullet",
         head="Nyame Helm",neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Metamor. Ring +1",ring2="Dingir Ring",
+        body="Lanun Frac +3",hands="Nyame Gauntlets",ring1="Metamor. Ring +1",ring2="Dingir Ring",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +3"}
 
     sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet,
         head="Nyame Helm",neck="Baetyl Pendant",ear1="Crematio Earring",ear2="Friomisi Earring",
-        body="Nyame Mail",hands="Carmine Fin. Ga. +1",ring1="Regal Ring",ring2="Dingir Ring",
+        body="Lanun Frac +3",hands="Carmine Fin. Ga. +1",ring1="Regal Ring",ring2="Dingir Ring",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +3"}
 
     sets.precast.WS['Wildfire'].Acc = {ammo=gear.MAbullet,
