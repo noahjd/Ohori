@@ -92,14 +92,14 @@ function init_gear_sets()
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants"})
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
-        head="Nyame Helm",neck="Iskur Gorget",ear1="Dedition Earring",ear2="Telos Earring",
+        head="Nyame Helm",neck="Marked Gorget",ear1="Dedition Earring",ear2="Neritic Earring",
         body="Lanun Frac +3",hands="Laksa. Gants +2",ring1="Ilabrat Ring",ring2="Petrov Ring",
-        back=gear.tp_ranger_jse_back,waist="Goading Belt",legs="Nyame Flanchard",feet="Laksa. Bottes +2"}
+        back=gear.tp_ranger_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Chasseur's Bottes +1"}
 		
 	sets.precast.CorsairShot.Damage = {ammo=gear.QDbullet,
-        head="Nyame Helm",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Crematio Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Shiva Ring +1",ring2="Dingir Ring",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Chasseur's Bottes +1"}
+        head="Nyame Helm",neck="Comm. Charm +1",ear1="Friomisi Earring",ear2="Crematio Earring",
+        body="Lanun Frac +3",hands="Carmine Fin. Ga. +1",ring1="Shiva Ring +1",ring2="Dingir Ring",
+        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +3"}
 	
     sets.precast.CorsairShot.Proc = {ammo=gear.RAbullet,
         head="Wh. Rarab Cap +1",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
@@ -107,9 +107,9 @@ function init_gear_sets()
         back="Moonlight Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Chasseur's Bottes +1"}
 
     sets.precast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
-        head="Nyame Helm",neck="Sanctity Necklace",ear1="Digni. Earring",ear2="Telos Earring",
-        body="Mummu Jacket +2",hands="Nyame Gauntlets",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
-        back=gear.ranger_wsd_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        head="Laksa. Tricorne +2",neck="Comm. Charm +1",ear1="Digni. Earring",ear2="Neritic Earring",
+        body="Mummu Jacket +2",hands="Laksa. Gants +2",ring1="Mummu Ring",ring2="Metamorph Ring",
+        back=gear.ranger_wsd_jse_back,waist="K. Kachina Belt +1",legs="Malignance Tights",feet="Laksa. Bottes  +2"}
 
     sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'], {feet="Chasseur's Bottes +1"})
 
@@ -336,7 +336,7 @@ function init_gear_sets()
 	sets.weapons.DualSavageWeapons = {main="Naegling",sub="Blurred Knife +1",range="Anarchy +2"}
 	sets.weapons.DualLeadenRanged = {main="Naegling",sub="Kaja Knife",range="Holliday"}
 	sets.weapons.DualLeadenMelee = {main="Naegling",sub="Atoyac",range="Holliday"}
-	sets.weapons.DualAeolian = {main="Rostam",sub="Tauret",range="Ataktos"}
+	sets.weapons.DualAeolian = {main="Rostam",sub="Tauret",range="Anarchy +2"}
 	sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub="Blurred Knife +1",range="Holliday"}
 	sets.weapons.DualRanged = {main="Rostam",sub="Kustawi +1",range="Fomalhaut"}
 	
@@ -350,7 +350,7 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {
 		head="Meghanada Visor +1",neck="Marked Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
-		body="Meg. Cuirie +1",hands="Meg. Gloves +2",ring1="Epona's Ring",ring2="Petrov Ring",
+		body="Mummu Jacket +2",hands="Meg. Gloves +2",ring1="Epona's Ring",ring2="Petrov Ring",
 		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
     
     sets.engaged.Acc = {
@@ -359,7 +359,7 @@ function init_gear_sets()
 		back=gear.tp_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 		
     sets.engaged.DT = {
-        head="Nyame Helm",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Petrov Ring",
         back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Nyame Sollerets"}
     
@@ -379,14 +379,14 @@ function init_gear_sets()
 		back=gear.tp_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 		
     sets.engaged.DW.DT = {
-        head="Nyame Helm",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Brutal Earring",
+        head="Malignance Chapeau",neck="Marked Gorget",ear1="Suppanomimi",ear2="Brutal Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Petrov Ring",
-        back=gear.tp_jse_back,waist="Reiki Yotai",legs="Malignance Tights",feet="Nyame Sollerets"}
+        back=gear.tp_jse_back,waist="Kentarch Belt +1",legs="Malignance Tights",feet="Nyame Sollerets"}
     
     sets.engaged.DW.Acc.DT = {
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Telos Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Ramuh Ring +1",
-        back=gear.tp_jse_back,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
+        back=gear.tp_jse_back,waist="Kentarch Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 end
 
 -- Select default macro book on initial load or subjob change.
