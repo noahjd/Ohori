@@ -332,9 +332,9 @@ function init_gear_sets()
 
 	-- Weapons sets
 	sets.weapons.Default = {main="Naegling",sub="Nusku Shield",range="Fomalhaut"}
-	sets.weapons.DualWeapons = {main="Kaja Sword",sub="Blurred Knife +1",range="Anarchy +2"} --main="Kaja Sword",sub="Kaja Knife",range="Fomalhaut"
-	sets.weapons.DualSavageWeapons = {main="Kaja Sword",sub="Blurred Knife +1",range="Anarchy +2"}
-	sets.weapons.DualLeadenRanged = {main="Kaja Sword",sub="Kaja Knife",range="Holliday"}
+	sets.weapons.DualWeapons = {main="Naegling",sub="Blurred Knife +1",range="Anarchy +2"}
+	sets.weapons.DualSavageWeapons = {main="Naegling",sub="Blurred Knife +1",range="Anarchy +2"}
+	sets.weapons.DualLeadenRanged = {main="Naegling",sub="Kaja Knife",range="Holliday"}
 	sets.weapons.DualLeadenMelee = {main="Naegling",sub="Atoyac",range="Holliday"}
 	sets.weapons.DualAeolian = {main="Rostam",sub="Tauret",range="Ataktos"}
 	sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub="Blurred Knife +1",range="Holliday"}
