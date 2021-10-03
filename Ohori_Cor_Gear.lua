@@ -92,7 +92,7 @@ function init_gear_sets()
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants"})
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
-        head="Nyame Helm",neck="Marked Gorget",ear1="Dedition Earring",ear2="Neritic Earring",
+        head="Nyame Helm",neck="Iskur Gorget",ear1="Dedition Earring",ear2="Neritic Earring",
         body="Lanun Frac +3",hands="Laksa. Gants +2",ring1="Ilabrat Ring",ring2="Petrov Ring",
         back=gear.tp_ranger_jse_back,waist="Eschan Stone",legs="Nyame Flanchard",feet="Chasseur's Bottes +1"}
 		
@@ -349,7 +349,7 @@ function init_gear_sets()
     
     -- Normal melee group
     sets.engaged = {
-		head="Meghanada Visor +1",neck="Marked Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
+		head="Meghanada Visor +1",neck="Iskur Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
 		body="Mummu Jacket +2",hands="Meg. Gloves +2",ring1="Epona's Ring",ring2="Petrov Ring",
 		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Meg. Chausses +1",feet="Meg. Jam. +2"}
     
@@ -369,7 +369,7 @@ function init_gear_sets()
         back=gear.tp_jse_back,waist="Olseni Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.engaged.DW = {
-		head="Meghanada Visor +1",neck="Marked Gorget",ear1="Suppanomimi",ear2="Brutal Earring",
+		head="Meghanada Visor +1",neck="Iskur Gorget",ear1="Suppanomimi",ear2="Brutal Earring",
 		body="Meg. Cuirie +1",hands="Meg. Gloves +2",ring1="Rajas Ring",ring2="Petrov Ring",
 		back=gear.tp_jse_back,waist="Kentarch Belt +1",legs=gear.herculean_ta_legs,feet=gear.herculean_ta_feet}
     
@@ -379,7 +379,7 @@ function init_gear_sets()
 		back=gear.tp_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 		
     sets.engaged.DW.DT = {
-        head="Malignance Chapeau",neck="Marked Gorget",ear1="Suppanomimi",ear2="Brutal Earring",
+        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Suppanomimi",ear2="Brutal Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Petrov Ring",
         back=gear.tp_jse_back,waist="Kentarch Belt +1",legs="Malignance Tights",feet="Nyame Sollerets"}
     
