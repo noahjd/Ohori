@@ -208,7 +208,7 @@ function init_gear_sets()
         ring2="Dingir Ring",
         back=gear.magic_wsd_jse_back,
         waist="Svelt. Gouriz +1",
-        legs="Shned. Tights +1",
+        legs="Nyame Flanchard",
         feet="Lanun Bottes +3"
     }
 
@@ -334,10 +334,10 @@ function init_gear_sets()
 	sets.weapons.Default = {main="Naegling",sub="Nusku Shield",range="Fomalhaut"}
 	sets.weapons.DualWeapons = {main="Naegling",sub="Blurred Knife +1",range="Anarchy +2"}
 	sets.weapons.DualSavageWeapons = {main="Naegling",sub="Blurred Knife +1",range="Anarchy +2"}
-	sets.weapons.DualLeadenRanged = {main="Naegling",sub="Kaja Knife",range="Holliday"}
-	sets.weapons.DualLeadenMelee = {main="Naegling",sub="Atoyac",range="Holliday"}
+	sets.weapons.DualLeadenRanged = {main="Naegling",sub="Kaja Knife",range="Molybdosis"}
+	sets.weapons.DualLeadenMelee = {main="Naegling",sub="Atoyac",range="Molybdosis"}
 	sets.weapons.DualAeolian = {main="Rostam",sub="Tauret",range="Anarchy +2"}
-	sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub="Blurred Knife +1",range="Holliday"}
+	sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub="Blurred Knife +1",range="Molybdosis"}
 	sets.weapons.DualRanged = {main="Rostam",sub="Kustawi +1",range="Fomalhaut"}
 	
     -- Engaged sets
