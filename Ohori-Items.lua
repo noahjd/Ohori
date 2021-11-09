@@ -11,7 +11,7 @@ sets.precast.Item['Holy Water'] = {}
 
 --Augmented items that you'll use among multiple jobs.
 
-gear.herculean_wsd_head = {name="Herculean Helm",augments={'Weapon skill damage +3%','STR+5',}}
+gear.herculean_wsd_head = {name="Herculean Helm",augments={'Accuracy+23','Weapon skill damage +4%','STR+8',}}
 gear.herculean_ta_legs = {name="Herculean Trousers",augments={'"Triple Atk."+3','DEX+1','Accuracy+10','Attack+3',}}
-gear.herculean_wsd_legs = {name="Herculean Trousers",augments={'Weapon skill damage +3%','STR+5','Attack+7',}}
+gear.herculean_wsd_legs = {name="Herculean Trousers",augments={'Accuracy+8','Weapon skill damage +4%','STR+5','Attack+8',}}
 gear.herculean_ta_feet = {name="Herculean Boots",augments={'Accuracy+20','"Triple Atk."+4','DEX+3','Attack+1',}}
