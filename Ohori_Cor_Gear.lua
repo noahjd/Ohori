@@ -17,12 +17,13 @@ function user_job_setup()
     options.ammo_warning_limit = 10
 
     autows = 'Leaden Salute'
+    rangedautows = 'Leaden Salute'
     autowstp = 1250
     autofood = 'Grape Daifuku'
 
 	gear.tp_ranger_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','"Store TP"+10',}} --'Rng.Acc.+10'
 	gear.snapshot_jse_back = {name="Camulus's Mantle",augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}}
-	gear.tp_jse_back = {name="Camulus's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}
+	gear.tp_jse_back = {name="Camulus's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}} -- swap resin 10 phys
 	gear.ranger_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}} --'AGI+10',
 	gear.magic_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}}
 	gear.str_wsd_jse_back = {name="Camulus's Mantle",augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}} --'STR+10',
@@ -80,7 +81,7 @@ function init_gear_sets()
         back=gear.snapshot_jse_back,
         waist="Flume Belt",
         legs="Malignance Tights",
-        feet="Nyame Sollerets"
+        feet="Malignance Boots"
     }
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
@@ -108,7 +109,7 @@ function init_gear_sets()
 
     sets.precast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
         head="Laksa. Tricorne +2",neck="Comm. Charm +1",ear1="Digni. Earring",ear2="Gwati Earring",
-        body="Mummu Jacket +2",hands="Laksa. Gants +2",ring1="Mummu Ring",ring2="Metamorph Ring",
+        body="Mummu Jacket +2",hands="Laksa. Gants +2",ring1="Mummu Ring",ring2="Metamor. Ring +1",
         back=gear.magic_wsd_jse_back,waist="K. Kachina Belt +1",legs="Malignance Tights",feet="Laksa. Bottes  +2"}
 
     sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'], {feet="Chasseur's Bottes +1"})
@@ -154,7 +155,7 @@ function init_gear_sets()
     sets.precast.WS.Acc = {
         head="Carmine Mask +1",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
         body="Laksa. Frac +3",hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Ilabrat Ring",
-        back=gear.str_wsd_jse_back,waist="Prosilio Belt +1",legs="Carmine Cuisses +1",feet="Lanun Bottes +3"}		
+        back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Carmine Cuisses +1",feet="Lanun Bottes +3"}		
 		
     sets.precast.WS.Proc = {
         head="Carmine Mask +1",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Mache Earring +1",
@@ -168,12 +169,12 @@ function init_gear_sets()
 	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
         head=gear.herculean_wsd_head,neck="Comm. Charm +1",ear1="Moonshade Earring",ear2="Ishvara Earring",
         body="Laksa. Frac +3",hands="Meg. Gloves +2",ring1="Karieyh Ring",ring2="Rufescent Ring",
-        back=gear.str_wsd_jse_back,waist="Prosilio Belt +1",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +3"}
+        back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs=gear.herculean_wsd_legs,feet="Lanun Bottes +3"}
 
     sets.precast.WS['Savage Blade'].Acc = {ammo=gear.WSbullet,
         head=gear.herculean_wsd_head,neck="Comm. Charm +1",ear1="Moonshade Earring",ear2="Telos Earring",
         body="Laksa. Frac +3",hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Rufescent Ring",
-        back=gear.str_wsd_jse_back,waist="Prosilio Belt +1",legs="Carmine Cuisses +1",feet="Lanun Bottes +3"}
+        back=gear.str_wsd_jse_back,waist="Sailfi Belt +1",legs="Carmine Cuisses +1",feet="Lanun Bottes +3"}
 	
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
         head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Telos Earring",
@@ -263,12 +264,12 @@ function init_gear_sets()
     sets.midcast.RA = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Iskur Gorget",ear1="Neritic Earring",ear2="Telos Earring",
         body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Mummu Ring",ring2="Dingir Ring",
-        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Malignance Tights",feet="Meg. Jam. +2"}
+        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Iskur Gorget",ear1="Neritic Earring",ear2="Telos Earring",
         body="Laksa. Frac +3",hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Dingir Ring",
-        back=gear.tp_ranger_jse_back,waist="K. Kachina Belt +1",legs="Malignance Tights",feet="Meg. Jam. +2"}
+        back=gear.tp_ranger_jse_back,waist="K. Kachina Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 		
 	sets.buff['Triple Shot'] = {head="Oshosi Mask",body="Chasseur's Frac",hands="Oshosi Gloves",legs="Oshosi Trousers",feet="Oshosi Leggings"}
     
@@ -349,9 +350,9 @@ function init_gear_sets()
     
     -- Normal melee group
     sets.engaged = {
-		head="Meghanada Visor +2",neck="Iskur Gorget",ear1="Brutal Earring",ear2="Telos Earring",
-		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Epona's Ring",ring2="Petrov Ring",
-		back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Meg. Jam. +2"}
+		head="Malignance Chapeau",neck="Iskur Gorget",ear1="Brutal Earring",ear2="Telos Earring",
+		body="Mummu Jacket +2",hands="Floral Gauntlets",ring1="Epona's Ring",ring2="Petrov Ring",
+		back=gear.tp_jse_back,waist="Sailfi Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
     
     sets.engaged.Acc = {
 		head="Carmine Mask +1",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Telos Earring",
@@ -361,7 +362,7 @@ function init_gear_sets()
     sets.engaged.DT = {
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Telos Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Petrov Ring",
-        back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Nyame Sollerets"}
+        back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
     
     sets.engaged.Acc.DT = {
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Telos Earring",
@@ -370,18 +371,18 @@ function init_gear_sets()
 
     sets.engaged.DW = {
 		head="Malignance Chapeau",neck="Iskur Gorget",ear1="Suppanomimi",ear2="Telos Earring",
-		body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Rajas Ring",ring2="Petrov Ring",
-		back=gear.tp_jse_back,waist="Kentarch Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
+		body="Mummu Jacket +2",hands="Floral Gauntlets",ring1="Rajas Ring",ring2="Petrov Ring",
+		back=gear.tp_jse_back,waist="Sailfi Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
     
     sets.engaged.DW.Acc = {
 		head="Carmine Mask +1",neck="Combatant's Torque",ear1="Suppanomimi",ear2="Telos Earring",
 		body="Malignance Tabard",hands="Floral Gauntlets",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-		back=gear.tp_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+		back=gear.tp_jse_back,waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 		
     sets.engaged.DW.DT = {
-        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Suppanomimi",ear2="Telos Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Petrov Ring",
-        back=gear.tp_jse_back,waist="Kentarch Belt +1",legs="Malignance Tights",feet="Nyame Sollerets"}
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Telos Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Rajas Ring",ring2="Petrov Ring",
+        back=gear.tp_jse_back,waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
     
     sets.engaged.DW.Acc.DT = {
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Telos Earring",
@@ -402,6 +403,10 @@ function select_default_macro_book()
     else
         set_macro_page(1, 1)
     end
+end
+
+function user_job_lockstyle()
+	windower.chat.input('/lockstyleset 001')
 end
 
 function user_job_lockstyle()
