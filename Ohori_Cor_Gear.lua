@@ -80,8 +80,8 @@ function init_gear_sets()
         ring2="Gelatinous Ring +1",
         back=gear.snapshot_jse_back,
         waist="Flume Belt",
-        legs="Malignance Tights",
-        feet="Malignance Boots"
+        legs="Nyame Flanchard",
+        feet="Nyame Sollerets"
     }
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
@@ -94,7 +94,7 @@ function init_gear_sets()
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
         head="Malignance Chapeau",neck="Iskur Gorget",ear1="Dedition Earring",ear2="Neritic Earring",
-        body="Mummu Jacket +2",hands="Laksa. Gants +2",ring1="Ilabrat Ring",ring2="Petrov Ring",
+        body="Malignance Tabard",hands="Laksa. Gants +2",ring1="Ilabrat Ring",ring2="Petrov Ring",
         back=gear.tp_ranger_jse_back,waist="Eschan Stone",legs="Malignance Tights",feet="Chasseur's Bottes +1"}
 		
 	sets.precast.CorsairShot.Damage = {ammo=gear.QDbullet,
@@ -109,7 +109,7 @@ function init_gear_sets()
 
     sets.precast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet,
         head="Laksa. Tricorne +2",neck="Comm. Charm +1",ear1="Digni. Earring",ear2="Gwati Earring",
-        body="Mummu Jacket +2",hands="Laksa. Gants +2",ring1="Mummu Ring",ring2="Metamor. Ring +1",
+        body="Malignance Tabard",hands="Laksa. Gants +2",ring1="Mummu Ring",ring2="Metamor. Ring +1",
         back=gear.magic_wsd_jse_back,waist="K. Kachina Belt +1",legs="Malignance Tights",feet="Laksa. Bottes  +2"}
 
     sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'], {feet="Chasseur's Bottes +1"})
@@ -263,7 +263,7 @@ function init_gear_sets()
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Iskur Gorget",ear1="Neritic Earring",ear2="Telos Earring",
-        body="Mummu Jacket +2",hands="Mummu Wrists +2",ring1="Mummu Ring",ring2="Dingir Ring",
+        body="Malignance Tabard",hands="Mummu Wrists +2",ring1="Mummu Ring",ring2="Dingir Ring",
         back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
@@ -361,7 +361,7 @@ function init_gear_sets()
 		
     sets.engaged.DT = {
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Telos Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Petrov Ring",
+        body="Malignance Tabard",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Petrov Ring",
         back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
     
     sets.engaged.Acc.DT = {
@@ -371,7 +371,7 @@ function init_gear_sets()
 
     sets.engaged.DW = {
 		head="Malignance Chapeau",neck="Iskur Gorget",ear1="Suppanomimi",ear2="Telos Earring",
-		body="Mummu Jacket +2",hands="Floral Gauntlets",ring1="Rajas Ring",ring2="Petrov Ring",
+		body="Malignance Tabard",hands="Floral Gauntlets",ring1="Rajas Ring",ring2="Petrov Ring",
 		back=gear.tp_jse_back,waist="Sailfi Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
     
     sets.engaged.DW.Acc = {
@@ -381,7 +381,7 @@ function init_gear_sets()
 		
     sets.engaged.DW.DT = {
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Telos Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Rajas Ring",ring2="Petrov Ring",
+        body="Malignance Tabard",hands="Nyame Gauntlets",ring1="Rajas Ring",ring2="Petrov Ring",
         back=gear.tp_jse_back,waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
     
     sets.engaged.DW.Acc.DT = {
