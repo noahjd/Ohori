@@ -1,9 +1,10 @@
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_job_setup()
+    init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoShadowMode","AutoFoodMode","RngHelper","AutoStunMode","AutoDefenseMode","LuzafRing",},{"AutoBuffMode","AutoSambaMode","Weapons","OffenseMode","RangedMode","WeaponskillMode","ElementalMode","IdleMode","Passive","RuneElement","CompensatorMode","CastingMode","TreasureMode",})
     state.OffenseMode:options('Normal','Acc')
     state.RangedMode:options('Normal','Acc')
     state.WeaponskillMode:options('Match','Normal','Acc','Proc')
-    state.CastingMode:options('Normal', 'Resistant')
+    state.CastingMode:options('Normal','Resistant','Fodder')
     state.IdleMode:options('PDT','Normal','Refresh')
 	state.HybridMode:options('DT','Normal')
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'DWMax'}
@@ -23,10 +24,10 @@ function user_job_setup()
 
 	gear.tp_ranger_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','"Store TP"+10',}} --'Rng.Acc.+10'
 	gear.snapshot_jse_back = {name="Camulus's Mantle",augments={'INT+20','Eva.+20 /Mag. Eva.+20','"Snapshot"+10',}}
-	gear.tp_jse_back = {name="Camulus's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}} -- swap resin 10 phys
-	gear.ranger_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}} --'AGI+10',
+	gear.tp_jse_back = {name="Camulus's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}}
+	gear.ranger_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','+10','Weapon skill damage +10%',}} --'AGI+10',
 	gear.magic_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}}
-	gear.str_wsd_jse_back = {name="Camulus's Mantle",augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}} --'STR+10',
+	gear.str_wsd_jse_back = {name="Camulus's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}} 
 
     -- Additional local binds
 	send_command('bind ^` gs c cycle ElementalMode')
@@ -74,7 +75,7 @@ function init_gear_sets()
         neck="Regal Necklace",
         ear1="Etiolation Earring",
         ear2="Eabani Earring",
-        body="Lanun Frac +3",
+        body="Nyame Mail",
         hands="Chasseur's Gants +1",
         ring1="Barataria Ring",
         ring2="Gelatinous Ring +1",
@@ -150,7 +151,7 @@ function init_gear_sets()
     sets.precast.WS = {
         head="Meghanada Visor +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
         body="Laksa. Frac +3",hands="Meg. Gloves +2",ring1="Regal Ring",ring2="Ifrit Ring +1",
-        back=gear.str_wsd_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+        back=gear.str_wsd_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet="Lanun Bottes +3"}
 		
     sets.precast.WS.Acc = {
         head="Carmine Mask +1",neck="Combatant's Torque",ear1="Digni. Earring",ear2="Telos Earring",
@@ -254,17 +255,17 @@ function init_gear_sets()
         body="Dread Jupon",hands="Leyline Gloves",ring1="Janniston Ring",ring2="Lebeche Ring",
         back="Solemnity Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 	
-	sets.Self_Healing = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
-	sets.Cure_Received = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
+	sets.Self_Healing = {waist="Gishdubar Sash"}
+	sets.Cure_Received = {waist="Gishdubar Sash"}
 	sets.Self_Refresh = {waist="Gishdubar Sash"}
 	
     sets.midcast.Utsusemi = sets.midcast.FastRecast
 
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
-        head="Malignance Chapeau",neck="Iskur Gorget",ear1="Neritic Earring",ear2="Telos Earring",
-        body="Malignance Tabard",hands="Mummu Wrists +2",ring1="Mummu Ring",ring2="Dingir Ring",
-        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Malignance Tights",feet="Malignance Boots"}
+        head="Ikenga's Hat",neck="Iskur Gorget",ear1="Neritic Earring",ear2="Telos Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Mummu Ring",ring2="Dingir Ring",
+        back=gear.tp_ranger_jse_back,waist="Yemaya Belt",legs="Ikenga's Trousers",feet="Malignance Boots"}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Iskur Gorget",ear1="Neritic Earring",ear2="Telos Earring",
@@ -361,7 +362,7 @@ function init_gear_sets()
 		
     sets.engaged.DT = {
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Telos Earring",
-        body="Malignance Tabard",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Petrov Ring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Petrov Ring",
         back=gear.tp_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
     
     sets.engaged.Acc.DT = {
@@ -381,7 +382,7 @@ function init_gear_sets()
 		
     sets.engaged.DW.DT = {
         head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Telos Earring",
-        body="Malignance Tabard",hands="Nyame Gauntlets",ring1="Rajas Ring",ring2="Petrov Ring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Rajas Ring",ring2="Petrov Ring",
         back=gear.tp_jse_back,waist="Sailfi Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
     
     sets.engaged.DW.Acc.DT = {
