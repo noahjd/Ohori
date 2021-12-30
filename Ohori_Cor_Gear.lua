@@ -77,7 +77,7 @@ function init_gear_sets()
         ear2="Eabani Earring",
         body="Nyame Mail",
         hands="Chasseur's Gants +1",
-        ring1="Barataria Ring",
+        ring1="Defending Ring",
         ring2="Gelatinous Ring +1",
         back=gear.snapshot_jse_back,
         waist="Flume Belt",
